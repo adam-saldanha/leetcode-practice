@@ -14,6 +14,9 @@ def valid_anagram(self, s: str, t: str) -> bool:
 
     Solution: First we assert that strings s and t are same length.
     We map strings t and s. Then we assert if the maps are the same.
+    Creating maps for s and t cost O(n + m).
+    Checking the equivalence of the maps is O(n) or O(m).
+    Overall efficiency is O(n + m)
     """
     if len(s) != len(t):
         return False
